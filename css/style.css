@@ -1,0 +1,55 @@
+body {
+    /*background: linear-gradient(#1bbb86, #696969) no-repeat fixed;*/
+    background-color: #ADAD85;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+button {
+    height: 40px;
+}
+
+#add-params {
+    height: 30px;
+    width: 47%;
+}
+
+#viewport {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+}
+
+#viewport * {
+    margin-top: 15px;
+}
+
+#generatedStory {
+    min-height: 250px;
+    max-height: 250px;
+    min-width: 300px;
+    background-color: aliceblue;
+    border-radius: 6px;
+    overflow-y: scroll;
+    color: darkslategrey;
+}
+
+#generatedStory .story:nth-child(odd) {
+    color: dimgrey;
+    font-weight: bold;
+}
+
+.story {
+    display: block;
+    margin-top: 10px;
+}
+
+.story::before {
+    content: "# ";
+}
+
+.story::after {
+    content: " #";
+}
